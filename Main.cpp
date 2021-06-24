@@ -6,9 +6,9 @@ int main()
 {   
     cout<<__func__<<"Begin"<<endl;
     BaseClass *bcp;
-    DerivedOne d1;
-    DerivedTwo d2;
-    DerivedThree d3;
+    DerivedOne d1(11);
+    DerivedTwo d2(22);
+    DerivedThree d3(33);
     bcp = &d1;
     bcp->pubFunc();
     bcp = &d2;

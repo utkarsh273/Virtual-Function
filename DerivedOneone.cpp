@@ -2,9 +2,9 @@
 #include"declerations.h"
 using namespace std;
 
-int DerivedOne::pubFunc()
+DerivedOne::DerivedOne(int fa):BaseClass(fa)
 {
     cout<<__func__<<"Begin"<<endl;
-    cout<<__func__<<": Priv1: "<<priv1<<endl;
+    priv1=fa;
     cout<<__func__<<"End"<<endl;
 }
